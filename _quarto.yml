@@ -1,0 +1,21 @@
+project:
+  type: book
+
+book:
+  title: "quant_book"
+  author: "Mislav Sagovac"
+  date: "6/5/2024"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual

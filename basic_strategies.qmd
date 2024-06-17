@@ -1,0 +1,56 @@
+# Basic systematic trading strategies
+
+In this section we will implement some of the most basic systematic trading strategies. We will start with the simplest strategies and then move to more complex strategies in next chapters. The goal of this section is to give you an introduction to systematic trading strategies and show you how to implement them in Python, R or any other programming language.
+
+## Hello world trend following strategy - SMA Cross
+
+When you start programming, you write hello world script. Counterpart to that in quantitative trading world is SMA cross strategy. It is the most basic strategy you can try to develop. It is based on the idea that the short-term moving average (SMA) crossing above the long-term moving average is a bullish signal, while the short-term moving average crossing below the long-term moving average is a bearish signal.
+
+The SMA cross strategy can be implemented on almost all asset classes, including stocks, bonds, commodities, and currencies. It can also be implemented on different time frames, from intraday to long-term. For example, one of the popular setup for SPX (most popular US stock index) is to use 50-day and 200-day moving averages. This strategy is known as Golden Cross strategy. There are also other variations of the SMA cross strategy, such as Death Cross strategy, which is the opposite of the Golden Cross strategy.
+
+This strategy belongs to set of trend following strategies. Trend following strategies are based on the idea that assets that have performed well in the past will continue to perform well in the future. Trend following strategies are usually based on moving averages, breakouts, and other technical indicators. They are usually simple to implement and have been shown to work in different markets and asset classes. They are not the same as momentum strategies. While trend following strategies analyse time series dimension (e.g. assets is on ATH), momentum strategies analyse cross-section dimension (e.g. returns of assets in point in time).
+
+Your task is to implement a SMA cross strategy in Python, R or any other programming language. You will invest only in SPY:
+
+1. Import the daily (OHLCV data) financial data for SPY. You can use yahoo finance data which is free.
+2. Calculate the short-term and long-term moving averages.
+3. Generate the signals based on the moving averages.
+4. Make simple vectorized backtest using the signals. (Tip: in R you can use PerformanceAnalytics package).
+5. Calculate the equity curve, drawdown and Sharpe ratio of the strategy.
+
+Besides the steps above, you can also try to optimize the strategy by changing the parameters of the strategy. For example, you can try to optimize the lookback period of the moving averages. You can also include some statistical models to improve the strategy, such as predictions from time series models, the strength of the trend etc.
+
+Implement this strategy in two ways:
+
+1. By using Python / R / other programming language inside script. 
+2. Inside Quantconnect platform.
+
+Next, we can test two variants of the strategy. Firs is explained in the @clenow2023following in chapter 4[^1]. The strategy uses exponential moving averages (EMA) of lengths 50 and 100. The strategy trades both on the long and short side. You can use same ETF-s as in above example with SMA. This time we are always in position with all ETF-s. As soon as there is a short signal for asset in long position, we immediately open a short position and vice versa.
+
+Second variation of the above strategy can include many various assets classes by using ETFs. For example, you can use SPY (S&P 500 ETF) for US stocks, TLT (US Treasury ETF) for bonds, GLD (Gold ETF) for commodities, and FXE (Euro ETF) for currencies. This is also known as ETF rotation strategy. This can be implemented in Quantconnect directly but in research too. This kind of strategy is usually implemented by using futures instead of ETFs, but for the sake of simplicity, you can use ETFs.
+
+[^1]: Book is available on the [link](https://snpmarketdata.blob.core.windows.net/books/Andreas F. Clenow - Following the Trend_ Diversified Managed Futures Trading (Wiley Trading)-Wiley (2023).pdf){target="_blank"}
+
+## Momentum strategy
+
+Momentum strategy is one of the most popular strategies in the financial market. The strategy involves buying assets that have performed well in the past and selling assets that have performed poorly.
+
+The momentum strategy can be implemented on almost all asset classes, including stocks, bonds, commodities, and currencies. It can also be implemented on different time frames, from intraday to long-term. There is also evidence that show that more assets you include (and more assets inside the asset class) in the strategy, the better the performance of the strategy (TODO: source). But for introduction, we will use only US stocks in the universe.
+
+Paper that introduced momentum is @jegadeesh1993returns. The paper showed that assets that have performed well in the past continue to perform relatively well in the future, while assets that have performed relatively poorly in the past continue to perform poorly in the future. After this paper there were many other papers that showed that momentum strategy works in different markets and asset classes. 
+TODO: Literature revew
+
+Momentum strategy can be implemented in different ways. One of the most popular ways is to rank assets based on their past performance and buy the top performing assets and sell the bottom performing assets.
+
+Your task is to implement a momentum strategy in Python, R or any other programming language. You will use only daily prices (OHLCV). Here are the steps in more detail:
+
+1. Import the daily (OHLCV data) financial data. You don't have to use all assets in US. Choose some sample.
+2. Apply coarse filtering of the whole universe if necessary - this include removing penny stocks, only most liquid assets etc.
+3. Calculate the momentum of each asset. That is calculate yearly returns
+4. Rank the assets based on their momentum.
+5. Buy the top performing assets and, optionally, sell the bottom performing assets.
+7. Calculate the equity curve, drawdown and Sharpe ratio of the strategy.
+
+As in strategy above, implement this strategy in two ways: 1) research script 2) Quantconnect:
+
+Besides the steps above, you can also try to optimize the strategy by changing the parameters of the strategy. For example, you can try to optimize the lookback period of the momentum, the number of assets in the portfolio, the holding period of the assets, etc. You can also include some statistical models to improve the strategy, such as predictions from time series models, the strength of the rend etc.

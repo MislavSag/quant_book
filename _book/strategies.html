@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quantitative investing - References</title>
+<title>Quantitative investing - 3&nbsp; Strategies</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -49,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./trading_basics.html" rel="prev">
+<link href="./trading_basics.html" rel="next">
+<link href="./basic_strategies.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -99,7 +81,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">References</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./strategies.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Strategies</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -144,7 +126,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./strategies.html" class="sidebar-item-text sidebar-link">
+  <a href="./strategies.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Strategies</span></span></a>
   </div>
 </li>
@@ -156,7 +138,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link active">
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -166,14 +148,33 @@ div.csl-indent {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#where-to-look-for-ideas" id="toc-where-to-look-for-ideas" class="nav-link active" data-scroll-target="#where-to-look-for-ideas"><span class="header-section-number">3.1</span> Where to look for ideas?</a></li>
+  <li><a href="#intraday-trading-strategies" id="toc-intraday-trading-strategies" class="nav-link" data-scroll-target="#intraday-trading-strategies"><span class="header-section-number">3.2</span> Intraday trading strategies</a>
+  <ul class="collapse">
+  <li><a href="#the-opening-range-breakout" id="toc-the-opening-range-breakout" class="nav-link" data-scroll-target="#the-opening-range-breakout"><span class="header-section-number">3.2.1</span> The Opening Range Breakout</a></li>
+  <li><a href="#intraday-momentum" id="toc-intraday-momentum" class="nav-link" data-scroll-target="#intraday-momentum"><span class="header-section-number">3.2.2</span> Intraday momentum</a></li>
+  </ul></li>
+  <li><a href="#crypto-trading-strategies" id="toc-crypto-trading-strategies" class="nav-link" data-scroll-target="#crypto-trading-strategies"><span class="header-section-number">3.3</span> Crypto trading strategies</a>
+  <ul class="collapse">
+  <li><a href="#a-perpetual-futures-basis-strategy" id="toc-a-perpetual-futures-basis-strategy" class="nav-link" data-scroll-target="#a-perpetual-futures-basis-strategy"><span class="header-section-number">3.3.1</span> A Perpetual Futures Basis Strategy</a></li>
+  </ul></li>
+  <li><a href="#event-based-strategies" id="toc-event-based-strategies" class="nav-link" data-scroll-target="#event-based-strategies"><span class="header-section-number">3.4</span> Event based strategies</a>
+  <ul class="collapse">
+  <li><a href="#ipo-ath" id="toc-ipo-ath" class="nav-link" data-scroll-target="#ipo-ath"><span class="header-section-number">3.4.1</span> IPO ATH</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">References</h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Strategies</span></h1>
 </div>
 
 
@@ -190,46 +191,54 @@ div.csl-indent {
 </header>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-mlr3book" class="csl-entry" role="listitem">
-Binder, Martin, Michel Lang, Lars Kotthoff, Patrick Schratz, Giuseppe
-Casalicchio, and Bernd Bischl. 2023. <em>Machine Learning with r: A
-Complete Guide</em>. mlr3book.mlr-org.com. <a href="https://mlr3book.mlr-org.com/">https://mlr3book.mlr-org.com/</a>.
-</div>
-<div id="ref-clenow2023following" class="csl-entry" role="listitem">
-Clenow, Andreas F. 2023. <em>Following the Trend: Diversified Managed
-Futures Trading</em>. 2nd ed. Wiley.
-</div>
-<div id="ref-Fan2019" class="csl-entry" role="listitem">
-Fan, Jianqing, and Qiwei Yao. 2019. <em>Nonlinear Time Series
-Analysis</em>. Wiley Series in Probability and Statistics. Hoboken, NJ:
-Wiley. <a href="https://www.amazon.com/Nonlinear-Analysis-Wiley-Probability-Statistics/dp/1119264057">https://www.amazon.com/Nonlinear-Analysis-Wiley-Probability-Statistics/dp/1119264057</a>.
-</div>
-<div id="ref-Fastai2024" class="csl-entry" role="listitem">
-Howard, Jeremy, and Sylvain Gugger. n.d. <span>“Fast.ai Course:
-Practical Deep Learning for Coders - Lesson 1.”</span> <a href="https://course.fast.ai/Lessons/lesson1.html" class="uri">https://course.fast.ai/Lessons/lesson1.html</a>.
-</div>
-<div id="ref-Hurn2019" class="csl-entry" role="listitem">
-Hurn, Stan, Vance Martin, and Annastiina Silvennoinen. 2019.
-<em>Financial Econometric Modeling</em>. New York: Oxford University
-Press. <a href="https://www.amazon.com/Financial-Econometric-Modeling-Stan-Hurn/dp/0190857064">https://www.amazon.com/Financial-Econometric-Modeling-Stan-Hurn/dp/0190857064</a>.
-</div>
-<div id="ref-jegadeesh1993returns" class="csl-entry" role="listitem">
-Jegadeesh, Narasimhan, and Sheridan Titman. 1993. <span>“Returns to
-Buying Winners and Selling Losers: Implications for Stock Market
-Efficiency.”</span> <em>The Journal of Finance</em> 48 (1): 65–91. <a href="https://doi.org/10.2307/2328882">https://doi.org/10.2307/2328882</a>.
-</div>
-<div id="ref-Coursera2024" class="csl-entry" role="listitem">
-Ng, Andrew, and DeepLearning.AI. n.d. <span>“Machine Learning
-Specialization.”</span> <a href="https://www.coursera.org/specializations/machine-learning-introduction?action=enroll&amp;utm_campaign=WebsiteCourses-MLS-TopButton-mls-launch-2022&amp;utm_medium=institutions&amp;utm_source=deeplearning-ai" class="uri">https://www.coursera.org/specializations/machine-learning-introduction?action=enroll&amp;utm_campaign=WebsiteCourses-MLS-TopButton-mls-launch-2022&amp;utm_medium=institutions&amp;utm_source=deeplearning-ai</a>.
-</div>
-<div id="ref-twitter_user_2023" class="csl-entry" role="listitem">
-Twitter User. 2023. <span>“Tweet Text or a Brief Description of the
-Tweet.”</span> <a href="https://x.com/i/bookmarks?post_id=1746581130000646267" class="uri">https://x.com/i/bookmarks?post_id=1746581130000646267</a>.
-</div>
-</div>
+<p>Here we will list some strategies you can try out. The main goal is to provide a starting point for you to learn how to do research part of trading strategydevelopemnt or/and trading strategies in backtesting engine (Quantconnect in our case). We are providing very shoer description of the strategy and link to original source of the strategy. You can choose one or more strategies and try to reproduce them. You can analyse some additional aspect of strategy not already mentioned in the source document.</p>
+<section id="where-to-look-for-ideas" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="where-to-look-for-ideas"><span class="header-section-number">3.1</span> Where to look for ideas?</h2>
+<ul>
+<li><a href="https://quantpedia.com/" target="_blank">Quantpedia</a> - Quantpedia is a great resource for quantitative trading strategies. They have a large database of strategies that are well-researched and backtested. You can search for strategies based on different criteria, such as asset class, strategy type, and performance metrics.</li>
+<li><a href="https://papers.ssrn.com/sol3/displayjel.cfm" target="_blank">SSRN</a> - SSRN is a repository of academic research papers in finance and economics. Look at G1, C58 JEL codes.</li>
+<li><a href="https://www.quantconnect.com/" target="_blank">QuantConnect</a> - QuantConnect hs list of trading ideas</li>
+<li>Robot Wealth <a href="https://robotwealth.com/" target="_blank">blog</a> and <a href="https://robotwealth.com/courses/trade-like-a-quant-bootcamp/" target="_blank">bootcamp</a>. Robot Wealth is a blog and online course platform that provides resources on quantitative trading strategies.</li>
+</ul>
+</section>
+<section id="intraday-trading-strategies" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="intraday-trading-strategies"><span class="header-section-number">3.2</span> Intraday trading strategies</h2>
+<section id="the-opening-range-breakout" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="the-opening-range-breakout"><span class="header-section-number">3.2.1</span> The Opening Range Breakout</h3>
+<p>The paper of the strategy can be found <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4416622" target="_blank">here</a>.</p>
+<p>The Opening Range Breakout (ORB) strategy is a day trading approach that focuses on trading within the first few minutes after the market opens. The strategy works as follows:</p>
+<p>First, it identifies the opening range, which is defined by the highest and lowest prices within the first few minutes of the trading session, commonly five minutes. This range serves as the basis for setting entry points. A trade is initiated if the price breaks out of this opening range. For example, if the price moves above the high of the opening range, a long (buy) position is taken. Conversely, if the price drops below the low of the opening range, a short (sell) position is taken.</p>
+<p>The actual entry into the trade is made at the open of the second 5-minute candle in the same direction as the breakout. If the first candle is bullish, meaning it closes higher than it opened, a long position is taken at the open of the second candle. If the first candle is bearish, closing lower than it opened, a short position is taken at the open of the second candle.</p>
+<p>Risk management is a crucial aspect of the ORB strategy. For a long trade, the stop loss is set at the low of the first 5-minute candle, and for a short trade, the stop loss is set at the high of the first 5-minute candle. This stop loss helps manage risk by limiting potential losses if the trade moves against the expected direction. The profit target is typically set at 10 times the risk, labeled as $R. If the price reaches this target, the trade is exited. If the target is not reached by the end of the day, the position is closed at market closure.</p>
+<p>Leverage and position sizing are also important components of the strategy. The strategy assumes a maximum leverage of 4x, as allowed by most US brokers. The trading size is calibrated so that if a stop loss is hit, it results in a loss of 1% of the trading capital. The formula for calculating the number of shares to trade takes into account the account size, the risk per trade, and the leverage allowed.</p>
+<p>For example, suppose the market opens and the first 5-minute candle forms with a high of $100 and a low of $95. If the second candle opens at $101, indicating a bullish breakout, a long position is entered at $101 (the open of the second candle). The stop loss is set at $95 (the low of the first candle), and the profit target is set at $161 (10 times the risk of $6).</p>
+<p>The ORB strategy was backtested from January 1, 2016, to February 17, 2023, using the QQQ ETF. The results showed that the ORB strategy significantly outperformed a passive buy-and-hold strategy on QQQ. The introduction of leveraged ETFs like TQQQ allowed traders to overcome leverage constraints and achieve higher returns.</p>
+<p>Key takeaways from this strategy include trading in the direction of the breakout from the opening range, effective risk management through the use of stop losses and profit targets, and the use of leveraged ETFs to enhance returns. The strategy proved effective across different market conditions, including both bull and bear markets. By adhering to these principles, the ORB strategy aims to capitalize on early market volatility to achieve significant returns.</p>
+</section>
+<section id="intraday-momentum" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="intraday-momentum"><span class="header-section-number">3.2.2</span> Intraday momentum</h3>
+<p>The paper of the strategy can be found <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4824172" target="_blank">here</a>.</p>
+<p>The paper investigates the profitability of an intraday momentum strategy applied to the SPY ETF, which tracks the S&amp;P 500. This strategy, unlike others that limit trading to the last 30 minutes of the session, initiates trend-following positions as soon as there is an indication of an abnormal demand/supply imbalance in intraday price action.</p>
+<p>The strategy works as follows: The data used covers SPY and VIX from May 2007 to April 2024, using 1-minute OHLCV (Open, High, Low, Close, and Volume) data from IQFeed. The Noise Area represents a region where prices are expected to oscillate under conditions of balanced buying and selling pressures. It is defined using the average movements over the previous 14 days for each time-of-day interval. The Upper Boundary and Lower Boundary of the Noise Area are calculated based on the average movement from the open, adjusted for overnight gaps. Positions are initiated when the price crosses the Noise Area boundaries. A crossing above the Upper Boundary indicates a long position, while a crossing below the Lower Boundary indicates a short position. Positions are unwound at market close or if there is a crossover to the opposite boundary of the Noise Area. Trading is restricted to bi-hourly intervals (e.g., HH:00 and HH:30) to avoid overtrading due to short-term market fluctuations.</p>
+<p>The strategy uses dynamic trailing stops to mitigate downside risks while allowing for unlimited upside potential. The trailing stops are set at the opposite side of the Noise Area. The number of shares traded is calculated based on the equity available at the beginning of each trading day, with adjustments made for market volatility. The strategy was backtested with an initial capital of $100,000, incorporating transaction costs and slippage. The equity curve of the strategy showed a total return of 1,985%, with an annualized return of 19.6% and a Sharpe Ratio of 1.33. The strategy adjusts daily exposure based on recent market volatility, targeting a daily market volatility of 2%.</p>
+</section>
+</section>
+<section id="crypto-trading-strategies" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="crypto-trading-strategies"><span class="header-section-number">3.3</span> Crypto trading strategies</h2>
+<section id="a-perpetual-futures-basis-strategy" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="a-perpetual-futures-basis-strategy"><span class="header-section-number">3.3.1</span> A Perpetual Futures Basis Strategy</h3>
+<p><a href="https://robotwealth.com/courses/trade-like-a-quant-bootcamp/lessons/bonus-material-simple-cryptocurrency-research-in-r/topic/futures-basis-effects/" target="_blank">Strategy</a> is explained in detailed on Robot Wealth bootcamp. Note there is an notebook with R code on the bottom of the document.</p>
+</section>
+</section>
+<section id="event-based-strategies" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="event-based-strategies"><span class="header-section-number">3.4</span> Event based strategies</h2>
+<section id="ipo-ath" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="ipo-ath"><span class="header-section-number">3.4.1</span> IPO ATH</h3>
+<p>The idea is to stocks after IPO if they are at all time high in 90 days from the IPO. The strategy is explained in detail in the substack <a href="https://www.quantitativo.com/p/the-edge-in-trading-ipos-18-annual?utm_source=multiple-personal-recommendations-email&amp;utm_medium=email&amp;triedRedirect=true" target="_blank">post</a>.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -621,11 +630,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./trading_basics.html" class="pagination-link" aria-label="Trading Basics">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Trading Basics</span></span>
+      <a href="./basic_strategies.html" class="pagination-link" aria-label="Basic systematic trading strategies">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Basic systematic trading strategies</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./trading_basics.html" class="pagination-link" aria-label="Trading Basics">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Trading Basics</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

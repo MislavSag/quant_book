@@ -1,9 +1,3 @@
 # Preface {.unnumbered}
 
-This is a Quarto book.
-
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
-
-```{r}
-1 + 1
-```
+This are guidelines for the new junior quant positions at SN Pectinatus d.d. The guidelines are intended to help you get started with your new role and to provide you with a reference for the most common tasks you will be performing. The guidelines are not exhaustive and you are encouraged to ask questions and seek help from your colleagues when needed.

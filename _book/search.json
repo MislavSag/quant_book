@@ -1,42 +1,192 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Quantitative investing",
+    "section": "",
+    "text": "Preface\nThis are guidelines for the new junior quant positions at SN Pectinatus d.d. The guidelines are intended to help you get started with your new role and to provide you with a reference for the most common tasks you will be performing. The guidelines are not exhaustive and you are encouraged to ask questions and seek help from your colleagues when needed.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "1  Introduction (#section-intro)",
+    "title": "1  Introduction",
     "section": "",
-    "text": "1.1 Becktesting engine (Quantconnect)\nIn most cases, you will use a backtesting engine to test your trading strategies. A backtesting engine is a software that simulates the performance of a trading strategy on historical data. There are many backtesting engines available. In out work we mostly use Quantconnect.\nQuantconnect is cloud platform for quant research and trading. It is based on LEAN engine, which is open source. It supports backtesting and live trading. It is written in C# and supports python. It has a lot of data sources, and it is relativly easy to use. It is a perfect environment for backtesting trading strategies and simple migration to paper/live trading.\nSimilar, to programming languges, we want learn you how to use Quantconnect. We can only give you some recommendations on how to learn it.\nIt is not necessary to go into details. The recommendation is to start with equity for the beginning. Later you can try with options/futures or some other asset classes. You can use python and C#, but we recommend you to use python. Python is much more used in finance, and it has numerous packages that make your job easier.\nExcept Quantconnect, there are other backtesting platforms. Here are some for information, you can check them if you want: - Zorro trading engine - Writing fasting trading strategies in C-lite or C++. Source: https://zorro-project.com/ (C i C++) - Natulius trader - write trading strategies in python or rust. Source: https://nautilustrader.io/ - Backtrader - very popular backtesting engine written in pure python. Source: https://www.backtrader.com/ - Vectorbt - vektorized backtester in python. Source: https://vectorbt.dev/ - Some people develop their own backtester, but we don’t recommend it for the beginning, except for simple strategies that include for loops for quick analysis.",
+    "text": "1.1 Becktesting engine (Quantconnect)\nIn most cases, you will use a backtesting engine to test your trading strategies. A backtesting engine is a software that simulates the performance of a trading strategy on historical data. There are many backtesting engines available. We mostly use Quantconnect.\nQuantconnect is cloud platform for quant research and trading based on LEAN engine, which is open source. It supports backtesting and live trading. It is written in C# and supports python. It has a lot of data sources, and it is relatively easy to use. It is a perfect environment for backtesting trading strategies and simple migration to paper/live trading.\nSimilar, to programming languages, we want to teach you how to use Quantconnect. Here are some recommendations:\nIt is not necessary to go into details. The recommendation is to start with equity for the beginning. Later you can try with options/futures or some other asset classes. You can use python and C#, but we recommend to use python. Python is much more used in finance, and it has numerous packages that make your job easier.\nExcept Quantconnect, there are other backtesting platforms. Here are some for information, you can check them if you want:",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction (#section-intro)</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
   },
   {
     "objectID": "intro.html#becktesting-engine-quantconnect",
     "href": "intro.html#becktesting-engine-quantconnect",
-    "title": "1  Introduction (#section-intro)",
+    "title": "1  Introduction",
     "section": "",
-    "text": "register as a new user on https://www.quantconnect.com/\ngo through bootcamps that can be found by clicking on Algorithm Lab - Learning Center.\ngo through you tube video series (especially https://www.youtube.com/playlist?list=PLgWn81pQ2CNKcuUgFosE5YlfJvIZmbVG8)\nRead the documentation https://www.quantconnect.com/docs/v2/writing-algorithms",
+    "text": "register as a new user on Quantconnect, homepage\ngo through bootcamps that can be found on Quantconnect site by clicking on Algorithm Lab &gt; Learning Center,\ngo through You Tube video series,\nRead the Quantconnect documentation\n\n\n\n\nZorro - Writing fast trading strategies in C-lite or C++,\nNatulius trader - write trading strategies in python or rust,\nBacktrader - very popular backtesting engine written in pure python,\nVectorbt - vectorized backtester in python,\nSome people develop their own backtester, but we don’t recommend it for beginners, except for simple strategies that include loops for quick analysis.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction (#section-intro)</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
   },
   {
     "objectID": "intro.html#programming-languages",
     "href": "intro.html#programming-languages",
-    "title": "1  Introduction (#section-intro)",
+    "title": "1  Introduction",
     "section": "1.2 Programming languages",
-    "text": "1.2 Programming languages\nThe most used programming language in the world of finance is Python. It is a high-level programming language that is relatively easy to learn and use. Other popular programming languages in finance include R, C++, Java, and MATLAB. In our researching process, backtesting and deployment, we mostly use R, python and, occasionally, C++. Learning one of this languages is a must for every quant. The more languages you know, the more versatile you are.\nWe can’t teach you any of this languages in this book. We can only give you some recommendations on how to learn them. We recommend you to start with Python, as it is the most used language in finance. You can learn it through online tutorials, books, or courses. There are plenty of sources online. It also depends on you preferences, If you like more to watch videos start with them, if you like books start with them.\nIf you are beginnes, we recommend you to start with DataCamp (https://www.datacamp.com/). It has a lot of courses for beginners and advanced users. Second, don’t just learn the language, start developing strategies with it as soon as possible. The best way to learn a programming language is by using it. Just strt the project in your favorit IDE (say VS code) and start coding.\nIf you prefer R, we recommend you to start learn following packages: - data.table - for all data wrangling tasks. It is faster than dplyr in R and pandas in python and uses less memory. - ggplot - for visualization. - PerformanceAnalytics - for calculating various portfolio or individual stock performances. - runner - for creating rolling and expanding windows. Here only one function is important. - lubridate - for working with times in R (converting time zones and similar). - mlr3 (optional, if you use ML, (Binder et al. 2023)) - Something like scikit learn in python. - Rcpp (optional, if you want to use c++ within R). - the biggest advantage of R is the rich set of statistical packages that are already developed. By simply googling you can quickly find a lot of information. You need GARCH? USe ugarch package. You need ARIMA? Use forecast package. You need to calculate VaR? Use rugarch package. And so on.\nAll above packages are learned continuously, through the development of strategies and projects. Every day you learn something new.",
+    "text": "1.2 Programming languages\nThe most used programming language in the world of finance is Python. It is a high-level programming language that is relatively easy to learn and use. Other popular programming languages in finance include R, C++, Java, and MATLAB. In our researching process, backtesting and deployment, we mostly use R, python and, occasionally, C++. Learning one of these languages is a must for every quant. The more languages you know, the more versatile you are.\nWe can’t teach you any of these languages in this book. We can only give you some recommendations on how to learn them. We recommend to start with Python, as it is the most used language in finance. You can learn it through online tutorials, books, or courses. There are plenty of sources online. It also depends on your preferences, watch videos read books…\nIf you are a beginner, we recommend to start with DataCamp . It has a lot of courses for beginners and advanced users. Second, don’t just learn the language, start developing strategies as soon as possible. The best way to learn a programming language is by using it. Just start the project in your favorite IDE (say VS code) and start coding.\nIf you prefer R, we recommend you to start learn following packages: - data.table - for all data wrangling tasks. It is faster than dplyr in R and pandas in python and uses less memory. - ggplot - for visualization. - PerformanceAnalytics - for calculating various portfolio or individual stock performances. - runner - for creating rolling and expanding windows. Here only one function is important. - lubridate - for working with times in R (converting time zones and similar). - mlr3 (optional, if you use ML, (Binder et al. 2023)) - Something like scikit learn in python. - Rcpp (optional, if you want to use c++ within R). - The biggest advantage of R is the rich set of statistical packages that are already developed. By simply googling you can quickly find a lot of information. You need GARCH? Use ugarch package. You need ARIMA? Use forecast package. You need to calculate VaR? Use rugarch package. And so on.\nAll above packages are learned continuously, through the development of strategies and projects. Every day you learn something new.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction (#section-intro)</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#data",
+    "href": "intro.html#data",
+    "title": "1  Introduction",
+    "section": "1.3 Data",
+    "text": "1.3 Data\nList of vendors are available on the link\nWe would like to add two more sources:\n\nDatabento - new data provider for very quality and granular market data.\nFinancial Modeling Prep (FMP) - free and paid data provider for various type of data.\n\nWe use daily and hour OHLCV (open, high, low, close price, volume) data from Algoseek (bought from Quantconnect) and minute data from Databento. We also use fundamental data from FMP.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
   },
   {
     "objectID": "intro.html#start-developing-strategies-as-soon-as-possible",
     "href": "intro.html#start-developing-strategies-as-soon-as-possible",
-    "title": "1  Introduction (#section-intro)",
-    "section": "1.3 Start developing strategies as soon as possible",
-    "text": "1.3 Start developing strategies as soon as possible\nExcept learning programming languages and backtesting engines, you should start developing strategies as soon as possible. The best way to learn is by doing. When you start developing strategies, start with simple ones. The more complex the strategy, the more difficult it is to debug and understand. We will give you some recommendations on how to start developing strategies.\n…\nOsim učenja gornjih tehnologija, poslat ću i: 1) jednu postojeću strategiju kako bi je proučili i potencijalno poboljšali (zajednički možemo raspraviti kako se može poboljšati). 2) jednu novu strategiju koju možeš testirati kroz skriptu/notebook u programskom jeziku po izboru i/ili Quantconnectu.\n…\n\n1.3.1 Market orders vs limit orders\nhttps://x.com/macrocephalopod/status/1375937561366003723\nYou can always submit a limit order which crosses the spread, combining the benefit of immediacy for all reasonable cases with the protection of a price limit in case of an illiquid market or price jump. A market buy order is a limit order with a price limit of infinity.\nSeems relevant given the recent BRK.A shenanigans on 06/2024.\n\n\n\n\nBinder, Martin, Michel Lang, Lars Kotthoff, Patrick Schratz, Giuseppe Casalicchio, and Bernd Bischl. 2023. Machine Learning with r: A Complete Guide. mlr3book.mlr-org.com. https://mlr3book.mlr-org.com/.",
+    "title": "1  Introduction",
+    "section": "1.4 Start developing strategies as soon as possible",
+    "text": "1.4 Start developing strategies as soon as possible\nExcept learning programming languages and backtesting engines, you should start developing strategies as soon as possible. The best way to learn is by working. When you start developing strategies, start with simple ones. The more complex the strategy, the more difficult it is to debug and understand. We will give you some recommendations on how to start developing strategies in next section.\nYour task would be to develope: 1) an existing strategy for you to study and potentially improve (we can discuss together how it can be improved). 2) a new strategy that you can test through a script/notebook in a programming language of your choice and/or Quantconnect.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction (#section-intro)</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#synchronization-through-syncthing",
+    "href": "intro.html#synchronization-through-syncthing",
+    "title": "1  Introduction",
+    "section": "1.5 Synchronization through syncthing",
+    "text": "1.5 Synchronization through syncthing\nWe use syncthing for synchronization of files between team members. It is a decentralized file synchronization tool that is very easy to use. It is open source and free. You can download it from https://syncthing.net/. It is available for all operating systems.\nHere are the steps you need to do to start using syncthing and synchronize with our server:\n\nDownload syncthing on the link. Read this Getting started guide to learn how to download and use it.\nAfter you download it, start it. You will see a web interface in your browser.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#literature-review",
+    "href": "intro.html#literature-review",
+    "title": "1  Introduction",
+    "section": "1.6 Literature review",
+    "text": "1.6 Literature review\nFor econometrics, we recommend the book (Wooldridge2019?). It is a very good book for beginners. If you prefer you tube videos, we recommend Ben Lamberts- videos.\nFinancial econometrics applies statistical methods on financial time series. There are many books and papers that you can read. For the beginners we recommend the book Hurn, Martin, and Silvennoinen (2019).\nStock prices and stock returns are just ralizations of time series. There are many time series introduction books. For more advances (nonlinear) time series, we recommend Fan and Yao (2019).\nFor ML and deep learning introductions we recommend Ng’s courses on Coursera Ng and DeepLearning.AI (n.d.) and DeepLearning.ai. For applied approach try with Howard and Gugger (n.d.).\n\n\n\n\nBinder, Martin, Michel Lang, Lars Kotthoff, Patrick Schratz, Giuseppe Casalicchio, and Bernd Bischl. 2023. Machine Learning with r: A Complete Guide. mlr3book.mlr-org.com. https://mlr3book.mlr-org.com/.\n\n\nFan, Jianqing, and Qiwei Yao. 2019. Nonlinear Time Series Analysis. Wiley Series in Probability and Statistics. Hoboken, NJ: Wiley. https://www.amazon.com/Nonlinear-Analysis-Wiley-Probability-Statistics/dp/1119264057.\n\n\nHoward, Jeremy, and Sylvain Gugger. n.d. “Fast.ai Course: Practical Deep Learning for Coders - Lesson 1.” https://course.fast.ai/Lessons/lesson1.html.\n\n\nHurn, Stan, Vance Martin, and Annastiina Silvennoinen. 2019. Financial Econometric Modeling. New York: Oxford University Press. https://www.amazon.com/Financial-Econometric-Modeling-Stan-Hurn/dp/0190857064.\n\n\nNg, Andrew, and DeepLearning.AI. n.d. “Machine Learning Specialization.” https://www.coursera.org/specializations/machine-learning-introduction?action=enroll&utm_campaign=WebsiteCourses-MLS-TopButton-mls-launch-2022&utm_medium=institutions&utm_source=deeplearning-ai.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "basic_strategies.html",
+    "href": "basic_strategies.html",
+    "title": "2  Basic systematic trading strategies",
+    "section": "",
+    "text": "2.1 Hello world strategy - SMA Cross\nWhen you start programming, you write hello world script. Counterpart to that in quantitative trading world is SMA cross strategy. It is the most basic strategy you can try to develop. It is based on the idea that the short-term moving average (SMA) crossing above the long-term moving average is a bullish signal, while the short-term moving average crossing below the long-term moving average is a bearish signal.\nThe SMA cross strategy can be implemented on almost all asset classes, including stocks, bonds, commodities, and currencies. It can also be implemented on different time frames, from intraday to long-term. For example, one of the popular setup for SPX (most popular US stock index) is to use 50-day and 200-day moving averages. This strategy is known as Golden Cross strategy. There are also other variations of the SMA cross strategy, such as Death Cross strategy, which is the opposite of the Golden Cross strategy.\nThis strategy belongs to set of trend following strategies. Trend following strategies are based on the idea that assets that have performed well in the past will continue to perform well in the future. Trend following strategies are usually based on moving averages, breakouts, and other technical indicators. They are usually simple to implement and have been shown to work in different markets and asset classes. They are not the same as momentum strategies. While trend following strategies analyse time series dimension (e.g. assets is on ATH), momentum strategies analyse cross-section dimension (e.g. returns of assets in point in time).\nYour task is to implement a SMA cross strategy in Python, R or any other programming language. You will invest only in SPY:\nBesides the steps above, you can also try to optimize the strategy by changing the parameters of the strategy. For example, you can try to optimize the lookback period of the moving averages. You can also include some statistical models to improve the strategy, such as predictions from time series models, the strength of the trend etc.\nImplement this strategy in two ways:\nNext, we can test two variants of the strategy. Firs is explained in the Clenow (2023) in chapter 41. The strategy uses exponential moving averages (EMA) of lengths 50 and 100. The strategy trades both on the long and short side. You can use same ETF-s as in above example with SMA. This time we are always in position with all ETF-s. As soon as there is a short signal for asset in long position, we immediately open a short position and vice versa.\nSecond variation of the above strategy can include many various assets classes by using ETFs. For example, you can use SPY (S&P 500 ETF) for US stocks, TLT (US Treasury ETF) for bonds, GLD (Gold ETF) for commodities, and FXE (Euro ETF) for currencies. This is also known as ETF rotation strategy. This can be implemented in Quantconnect directly but in research too. This kind of strategy is usually implemented by using futures instead of ETFs, but for the sake of simplicity, you can use ETFs.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basic systematic trading strategies</span>"
+    ]
+  },
+  {
+    "objectID": "basic_strategies.html#hello-world-strategy---sma-cross",
+    "href": "basic_strategies.html#hello-world-strategy---sma-cross",
+    "title": "2  Basic systematic trading strategies",
+    "section": "",
+    "text": "Import the daily (OHLCV data) financial data for SPY. You can use yahoo finance data which is free.\nCalculate the short-term and long-term moving averages.\nGenerate the signals based on the moving averages.\nMake simple vectorized backtest using the signals. (Tip: in R you can use PerformanceAnalytics package).\nCalculate the equity curve, drawdown and Sharpe ratio of the strategy.\n\n\n\n\nBy using Python / R / other programming language inside script.\nInside Quantconnect platform.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basic systematic trading strategies</span>"
+    ]
+  },
+  {
+    "objectID": "basic_strategies.html#momentum-strategy",
+    "href": "basic_strategies.html#momentum-strategy",
+    "title": "2  Basic systematic trading strategies",
+    "section": "2.2 Momentum strategy",
+    "text": "2.2 Momentum strategy\nMomentum strategy is one of the most popular strategies in the financial market. The strategy involves buying assets that have performed well in the past and selling assets that have performed poorly.\nThe momentum strategy can be implemented on almost all asset classes, including stocks, bonds, commodities, and currencies. It can also be implemented on different time frames, from intraday to long-term. There is also evidence that show that more assets you include (and more assets inside the asset class) in the strategy, the better the performance of the strategy (TODO: source). But for introduction, we will use only US stocks in the universe.\nPaper that introduced momentum is Jegadeesh and Titman (1993). The paper showed that assets that have performed well in the past continue to perform relatively well in the future, while assets that have performed relatively poorly in the past continue to perform poorly in the future. After this paper there were many other papers that showed that momentum strategy works in different markets and asset classes. TODO: Literature revew\nMomentum strategy can be implemented in different ways. One of the most popular ways is to rank assets based on their past performance and buy the top performing assets and sell the bottom performing assets.\nYour task is to implement a momentum strategy in Python, R or any other programming language. You will use only daily prices (OHLCV). Here are the steps in more detail:\n\nImport the daily (OHLCV data) financial data. You don’t have to use all assets in US. Choose some sample.\nApply coarse filtering of the whole universe if necessary - this include removing penny stocks, only most liquid assets etc.\nCalculate the momentum of each asset. That is calculate yearly returns\nRank the assets based on their momentum.\nBuy the top performing assets and, optionally, sell the bottom performing assets.\nCalculate the equity curve, drawdown and Sharpe ratio of the strategy.\n\nAs in strategy above, implement this strategy in two ways: 1) research script 2) Quantconnect:\nBesides the steps above, you can also try to optimize the strategy by changing the parameters of the strategy. For example, you can try to optimize the lookback period of the momentum, the number of assets in the portfolio, the holding period of the assets, etc. You can also include some statistical models to improve the strategy, such as predictions from time series models, the strength of the rend etc.\n\n\n\n\nClenow, Andreas F. 2023. Following the Trend: Diversified Managed Futures Trading. 2nd ed. Wiley.\n\n\nJegadeesh, Narasimhan, and Sheridan Titman. 1993. “Returns to Buying Winners and Selling Losers: Implications for Stock Market Efficiency.” The Journal of Finance 48 (1): 65–91. https://doi.org/10.2307/2328882.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basic systematic trading strategies</span>"
+    ]
+  },
+  {
+    "objectID": "basic_strategies.html#footnotes",
+    "href": "basic_strategies.html#footnotes",
+    "title": "2  Basic systematic trading strategies",
+    "section": "",
+    "text": "Book is available on the link↩︎",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Basic systematic trading strategies</span>"
+    ]
+  },
+  {
+    "objectID": "strategies.html",
+    "href": "strategies.html",
+    "title": "3  Strategies",
+    "section": "",
+    "text": "3.1 Where to look for ideas?",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Strategies</span>"
+    ]
+  },
+  {
+    "objectID": "strategies.html#where-to-look-for-ideas",
+    "href": "strategies.html#where-to-look-for-ideas",
+    "title": "3  Strategies",
+    "section": "",
+    "text": "Quantpedia - Quantpedia is a great resource for quantitative trading strategies. They have a large database of strategies that are well-researched and backtested. You can search for strategies based on different criteria, such as asset class, strategy type, and performance metrics.\nSSRN - SSRN is a repository of academic research papers in finance and economics. Look at G1, C58 JEL codes.\nQuantConnect - QuantConnect hs list of trading ideas\nRobot Wealth blog and bootcamp. Robot Wealth is a blog and online course platform that provides resources on quantitative trading strategies.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Strategies</span>"
+    ]
+  },
+  {
+    "objectID": "strategies.html#intraday-trading-strategies",
+    "href": "strategies.html#intraday-trading-strategies",
+    "title": "3  Strategies",
+    "section": "3.2 Intraday trading strategies",
+    "text": "3.2 Intraday trading strategies\n\n3.2.1 The Opening Range Breakout\nThe paper of the strategy can be found here.\nThe Opening Range Breakout (ORB) strategy is a day trading approach that focuses on trading within the first few minutes after the market opens. The strategy works as follows:\nFirst, it identifies the opening range, which is defined by the highest and lowest prices within the first few minutes of the trading session, commonly five minutes. This range serves as the basis for setting entry points. A trade is initiated if the price breaks out of this opening range. For example, if the price moves above the high of the opening range, a long (buy) position is taken. Conversely, if the price drops below the low of the opening range, a short (sell) position is taken.\nThe actual entry into the trade is made at the open of the second 5-minute candle in the same direction as the breakout. If the first candle is bullish, meaning it closes higher than it opened, a long position is taken at the open of the second candle. If the first candle is bearish, closing lower than it opened, a short position is taken at the open of the second candle.\nRisk management is a crucial aspect of the ORB strategy. For a long trade, the stop loss is set at the low of the first 5-minute candle, and for a short trade, the stop loss is set at the high of the first 5-minute candle. This stop loss helps manage risk by limiting potential losses if the trade moves against the expected direction. The profit target is typically set at 10 times the risk, labeled as $R. If the price reaches this target, the trade is exited. If the target is not reached by the end of the day, the position is closed at market closure.\nLeverage and position sizing are also important components of the strategy. The strategy assumes a maximum leverage of 4x, as allowed by most US brokers. The trading size is calibrated so that if a stop loss is hit, it results in a loss of 1% of the trading capital. The formula for calculating the number of shares to trade takes into account the account size, the risk per trade, and the leverage allowed.\nFor example, suppose the market opens and the first 5-minute candle forms with a high of $100 and a low of $95. If the second candle opens at $101, indicating a bullish breakout, a long position is entered at $101 (the open of the second candle). The stop loss is set at $95 (the low of the first candle), and the profit target is set at $161 (10 times the risk of $6).\nThe ORB strategy was backtested from January 1, 2016, to February 17, 2023, using the QQQ ETF. The results showed that the ORB strategy significantly outperformed a passive buy-and-hold strategy on QQQ. The introduction of leveraged ETFs like TQQQ allowed traders to overcome leverage constraints and achieve higher returns.\nKey takeaways from this strategy include trading in the direction of the breakout from the opening range, effective risk management through the use of stop losses and profit targets, and the use of leveraged ETFs to enhance returns. The strategy proved effective across different market conditions, including both bull and bear markets. By adhering to these principles, the ORB strategy aims to capitalize on early market volatility to achieve significant returns.\n\n\n3.2.2 Intraday momentum\nThe paper of the strategy can be found here.\nThe paper investigates the profitability of an intraday momentum strategy applied to the SPY ETF, which tracks the S&P 500. This strategy, unlike others that limit trading to the last 30 minutes of the session, initiates trend-following positions as soon as there is an indication of an abnormal demand/supply imbalance in intraday price action.\nThe strategy works as follows: The data used covers SPY and VIX from May 2007 to April 2024, using 1-minute OHLCV (Open, High, Low, Close, and Volume) data from IQFeed. The Noise Area represents a region where prices are expected to oscillate under conditions of balanced buying and selling pressures. It is defined using the average movements over the previous 14 days for each time-of-day interval. The Upper Boundary and Lower Boundary of the Noise Area are calculated based on the average movement from the open, adjusted for overnight gaps. Positions are initiated when the price crosses the Noise Area boundaries. A crossing above the Upper Boundary indicates a long position, while a crossing below the Lower Boundary indicates a short position. Positions are unwound at market close or if there is a crossover to the opposite boundary of the Noise Area. Trading is restricted to bi-hourly intervals (e.g., HH:00 and HH:30) to avoid overtrading due to short-term market fluctuations.\nThe strategy uses dynamic trailing stops to mitigate downside risks while allowing for unlimited upside potential. The trailing stops are set at the opposite side of the Noise Area. The number of shares traded is calculated based on the equity available at the beginning of each trading day, with adjustments made for market volatility. The strategy was backtested with an initial capital of $100,000, incorporating transaction costs and slippage. The equity curve of the strategy showed a total return of 1,985%, with an annualized return of 19.6% and a Sharpe Ratio of 1.33. The strategy adjusts daily exposure based on recent market volatility, targeting a daily market volatility of 2%.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Strategies</span>"
+    ]
+  },
+  {
+    "objectID": "strategies.html#crypto-trading-strategies",
+    "href": "strategies.html#crypto-trading-strategies",
+    "title": "3  Strategies",
+    "section": "3.3 Crypto trading strategies",
+    "text": "3.3 Crypto trading strategies\n\n3.3.1 A Perpetual Futures Basis Strategy\nStrategy is explained in detailed on Robot Wealth bootcamp. Note there is an notebook with R code on the bottom of the document.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Strategies</span>"
+    ]
+  },
+  {
+    "objectID": "strategies.html#event-based-strategies",
+    "href": "strategies.html#event-based-strategies",
+    "title": "3  Strategies",
+    "section": "3.4 Event based strategies",
+    "text": "3.4 Event based strategies\n\n3.4.1 IPO ATH\nThe idea is to stocks after IPO if they are at all time high in 90 days from the IPO. The strategy is explained in detail in the substack post.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Strategies</span>"
+    ]
+  },
+  {
+    "objectID": "trading_basics.html",
+    "href": "trading_basics.html",
+    "title": "4  Trading Basics",
+    "section": "",
+    "text": "4.1 Automated vs systematic vs quantitatvie investing\nWe often here terms automated, systemtic and quantitative trading as synonyms (opposites are manual, discretionary and non-quantitatvie trading). But they refer to different things (Twitter User 2023). Automated trading refers to the use of computers (codes) to execute trades. Fully automated trading doesn’t require human intervention. Everything is automated, from data loading and statistical analysis, to execution. There is of course a spectrum of automation, from semi-automated to fully automated. Systematic trading refers to the use of a system or a set of rules to make trading decisions. The rules can be based on technical analysis, fundamental analysis, or a combination of both. Quantitative trading refers to the use of (mathematical) models to make trading decisions. The models can be based on statistical analysis, machine learning, or a combination of both. Quantitative trading is a subset of systematic trading, because model based trading is systematic by definition. But not all systematic trading is quantitative. For example, a systematic trader can use technical analysis to make trading decisions (e.g. SMA short is higher than SMA long), without using any mathematical models.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Trading Basics</span>"
+    ]
+  },
+  {
+    "objectID": "trading_basics.html#market-orders-vs-limit-orders",
+    "href": "trading_basics.html#market-orders-vs-limit-orders",
+    "title": "4  Trading Basics",
+    "section": "4.2 Market orders vs limit orders",
+    "text": "4.2 Market orders vs limit orders\nhttps://x.com/macrocephalopod/status/1375937561366003723\nYou can always submit a limit order which crosses the spread, combining the benefit of immediacy for all reasonable cases with the protection of a price limit in case of an illiquid market or price jump. A market buy order is a limit order with a price limit of infinity.\nSeems relevant given the recent BRK.A shenanigans on 06/2024.\n\n\n\n\nTwitter User. 2023. “Tweet Text or a Brief Description of the Tweet.” https://x.com/i/bookmarks?post_id=1746581130000646267.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Trading Basics</span>"
     ]
   },
   {
@@ -44,7 +194,7 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Binder, Martin, Michel Lang, Lars Kotthoff, Patrick Schratz, Giuseppe\nCasalicchio, and Bernd Bischl. 2023. Machine Learning with r: A\nComplete Guide. mlr3book.mlr-org.com. https://mlr3book.mlr-org.com/.",
+    "text": "Binder, Martin, Michel Lang, Lars Kotthoff, Patrick Schratz, Giuseppe\nCasalicchio, and Bernd Bischl. 2023. Machine Learning with r: A\nComplete Guide. mlr3book.mlr-org.com. https://mlr3book.mlr-org.com/.\n\n\nClenow, Andreas F. 2023. Following the Trend: Diversified Managed\nFutures Trading. 2nd ed. Wiley.\n\n\nFan, Jianqing, and Qiwei Yao. 2019. Nonlinear Time Series\nAnalysis. Wiley Series in Probability and Statistics. Hoboken, NJ:\nWiley. https://www.amazon.com/Nonlinear-Analysis-Wiley-Probability-Statistics/dp/1119264057.\n\n\nHoward, Jeremy, and Sylvain Gugger. n.d. “Fast.ai Course:\nPractical Deep Learning for Coders - Lesson 1.” https://course.fast.ai/Lessons/lesson1.html.\n\n\nHurn, Stan, Vance Martin, and Annastiina Silvennoinen. 2019.\nFinancial Econometric Modeling. New York: Oxford University\nPress. https://www.amazon.com/Financial-Econometric-Modeling-Stan-Hurn/dp/0190857064.\n\n\nJegadeesh, Narasimhan, and Sheridan Titman. 1993. “Returns to\nBuying Winners and Selling Losers: Implications for Stock Market\nEfficiency.” The Journal of Finance 48 (1): 65–91. https://doi.org/10.2307/2328882.\n\n\nNg, Andrew, and DeepLearning.AI. n.d. “Machine Learning\nSpecialization.” https://www.coursera.org/specializations/machine-learning-introduction?action=enroll&utm_campaign=WebsiteCourses-MLS-TopButton-mls-launch-2022&utm_medium=institutions&utm_source=deeplearning-ai.\n\n\nTwitter User. 2023. “Tweet Text or a Brief Description of the\nTweet.” https://x.com/i/bookmarks?post_id=1746581130000646267.",
     "crumbs": [
       "References"
     ]

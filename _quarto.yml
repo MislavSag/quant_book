@@ -2,12 +2,15 @@ project:
   type: book
 
 book:
-  title: "quant_book"
+  title: "Quantitative investing"
   author: "Mislav Sagovac"
   date: "6/5/2024"
   chapters:
     - index.qmd
     - intro.qmd
+    - basic_strategies.qmd
+    - strategies.qmd
+    - trading_basics.qmd
     - references.qmd
 
 bibliography: references.bib
@@ -15,7 +18,7 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
 
 editor: visual
+
+# qpa_V1mwaVZoFWoz5Rn4OmDj3BKOuB2ZrqA66Gv27RIthhQnWeK3Mql3VUmcSSvWbOow

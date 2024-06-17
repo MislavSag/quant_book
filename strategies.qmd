@@ -1,0 +1,59 @@
+# Strategies
+
+Here we will list some strategies you can try out. The main goal is to provide a starting point for you to learn how to do research part of trading strategydevelopemnt or/and trading strategies in backtesting engine (Quantconnect in our case). We are providing very shoer description of the strategy and link to original source of the strategy. You can choose one or more strategies and try to reproduce them. You can analyse some additional aspect of strategy not already mentioned in the source document.
+
+## Where to look for ideas?
+
+- [Quantpedia](https://quantpedia.com/){target="_blank"} - Quantpedia is a great resource for quantitative trading strategies. They have a large database of strategies that are well-researched and backtested. You can search for strategies based on different criteria, such as asset class, strategy type, and performance metrics.
+- [SSRN](https://papers.ssrn.com/sol3/displayjel.cfm){target="_blank"} - SSRN is a repository of academic research papers in finance and economics. Look at G1, C58 JEL codes.
+- [QuantConnect](https://www.quantconnect.com/){target="_blank"} - QuantConnect hs list of trading ideas
+- Robot Wealth [blog](https://robotwealth.com/){target="_blank"} and [bootcamp](https://robotwealth.com/courses/trade-like-a-quant-bootcamp/){target="_blank"}. Robot Wealth is a blog and online course platform that provides resources on quantitative trading strategies.
+
+
+## Intraday trading strategies
+
+### The Opening Range Breakout
+
+The paper of the strategy can be found [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4416622){target="_blank"}.
+
+The Opening Range Breakout (ORB) strategy is a day trading approach that focuses on trading within the first few minutes after the market opens. The strategy works as follows:
+
+First, it identifies the opening range, which is defined by the highest and lowest prices within the first few minutes of the trading session, commonly five minutes. This range serves as the basis for setting entry points. A trade is initiated if the price breaks out of this opening range. For example, if the price moves above the high of the opening range, a long (buy) position is taken. Conversely, if the price drops below the low of the opening range, a short (sell) position is taken.
+
+The actual entry into the trade is made at the open of the second 5-minute candle in the same direction as the breakout. If the first candle is bullish, meaning it closes higher than it opened, a long position is taken at the open of the second candle. If the first candle is bearish, closing lower than it opened, a short position is taken at the open of the second candle.
+
+Risk management is a crucial aspect of the ORB strategy. For a long trade, the stop loss is set at the low of the first 5-minute candle, and for a short trade, the stop loss is set at the high of the first 5-minute candle. This stop loss helps manage risk by limiting potential losses if the trade moves against the expected direction. The profit target is typically set at 10 times the risk, labeled as $R. If the price reaches this target, the trade is exited. If the target is not reached by the end of the day, the position is closed at market closure.
+
+Leverage and position sizing are also important components of the strategy. The strategy assumes a maximum leverage of 4x, as allowed by most US brokers. The trading size is calibrated so that if a stop loss is hit, it results in a loss of 1% of the trading capital. The formula for calculating the number of shares to trade takes into account the account size, the risk per trade, and the leverage allowed.
+
+For example, suppose the market opens and the first 5-minute candle forms with a high of $100 and a low of $95. If the second candle opens at $101, indicating a bullish breakout, a long position is entered at $101 (the open of the second candle). The stop loss is set at $95 (the low of the first candle), and the profit target is set at $161 (10 times the risk of $6).
+
+The ORB strategy was backtested from January 1, 2016, to February 17, 2023, using the QQQ ETF. The results showed that the ORB strategy significantly outperformed a passive buy-and-hold strategy on QQQ. The introduction of leveraged ETFs like TQQQ allowed traders to overcome leverage constraints and achieve higher returns.
+
+Key takeaways from this strategy include trading in the direction of the breakout from the opening range, effective risk management through the use of stop losses and profit targets, and the use of leveraged ETFs to enhance returns. The strategy proved effective across different market conditions, including both bull and bear markets. By adhering to these principles, the ORB strategy aims to capitalize on early market volatility to achieve significant returns.
+
+
+### Intraday momentum
+
+The paper of the strategy can be found [here](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4824172){target="_blank"}.
+
+The paper investigates the profitability of an intraday momentum strategy applied to the SPY ETF, which tracks the S&P 500. This strategy, unlike others that limit trading to the last 30 minutes of the session, initiates trend-following positions as soon as there is an indication of an abnormal demand/supply imbalance in intraday price action.
+
+The strategy works as follows: The data used covers SPY and VIX from May 2007 to April 2024, using 1-minute OHLCV (Open, High, Low, Close, and Volume) data from IQFeed. The Noise Area represents a region where prices are expected to oscillate under conditions of balanced buying and selling pressures. It is defined using the average movements over the previous 14 days for each time-of-day interval. The Upper Boundary and Lower Boundary of the Noise Area are calculated based on the average movement from the open, adjusted for overnight gaps. Positions are initiated when the price crosses the Noise Area boundaries. A crossing above the Upper Boundary indicates a long position, while a crossing below the Lower Boundary indicates a short position. Positions are unwound at market close or if there is a crossover to the opposite boundary of the Noise Area. Trading is restricted to bi-hourly intervals (e.g., HH:00 and HH:30) to avoid overtrading due to short-term market fluctuations.
+
+The strategy uses dynamic trailing stops to mitigate downside risks while allowing for unlimited upside potential. The trailing stops are set at the opposite side of the Noise Area. The number of shares traded is calculated based on the equity available at the beginning of each trading day, with adjustments made for market volatility. The strategy was backtested with an initial capital of $100,000, incorporating transaction costs and slippage. The equity curve of the strategy showed a total return of 1,985%, with an annualized return of 19.6% and a Sharpe Ratio of 1.33. The strategy adjusts daily exposure based on recent market volatility, targeting a daily market volatility of 2%.
+
+## Crypto trading strategies
+
+### A Perpetual Futures Basis Strategy
+
+[Strategy](https://robotwealth.com/courses/trade-like-a-quant-bootcamp/lessons/bonus-material-simple-cryptocurrency-research-in-r/topic/futures-basis-effects/
+){target="_blank"} is explained in detailed on Robot Wealth bootcamp. Note there is an notebook with R code on the bottom of the document.
+
+
+## Event based strategies
+
+### IPO ATH
+
+The idea is to stocks after IPO if they are at all time high in 90 days from the IPO. The strategy is explained in detail in the substack [post](https://www.quantitativo.com/p/the-edge-in-trading-ipos-18-annual?utm_source=multiple-personal-recommendations-email&utm_medium=email&triedRedirect=true){target="_blank"}.
+

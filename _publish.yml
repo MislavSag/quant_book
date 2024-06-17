@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: bb5a6769-9bcd-40e8-86a9-5ff929924556
+      url: 'https://mislav.quarto.pub/quant_book'

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>quant_book - 1&nbsp; Introduction (#section-intro)</title>
+<title>Quantitative investing - 1&nbsp; Introduction</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,7 +50,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
+<link href="./basic_strategies.html" rel="next">
 <link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -101,7 +101,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction (#section-intro)</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -116,7 +116,7 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">quant_book</a> 
+      <a href="./">Quantitative investing</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -135,7 +135,25 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction (#section-intro)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./basic_strategies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Basic systematic trading strategies</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./strategies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Strategies</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./trading_basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Trading Basics</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -156,10 +174,10 @@ div.csl-indent {
   <ul>
   <li><a href="#becktesting-engine-quantconnect" id="toc-becktesting-engine-quantconnect" class="nav-link active" data-scroll-target="#becktesting-engine-quantconnect"><span class="header-section-number">1.1</span> Becktesting engine (Quantconnect)</a></li>
   <li><a href="#programming-languages" id="toc-programming-languages" class="nav-link" data-scroll-target="#programming-languages"><span class="header-section-number">1.2</span> Programming languages</a></li>
-  <li><a href="#start-developing-strategies-as-soon-as-possible" id="toc-start-developing-strategies-as-soon-as-possible" class="nav-link" data-scroll-target="#start-developing-strategies-as-soon-as-possible"><span class="header-section-number">1.3</span> Start developing strategies as soon as possible</a>
-  <ul class="collapse">
-  <li><a href="#market-orders-vs-limit-orders" id="toc-market-orders-vs-limit-orders" class="nav-link" data-scroll-target="#market-orders-vs-limit-orders"><span class="header-section-number">1.3.1</span> Market orders vs limit orders</a></li>
-  </ul></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data"><span class="header-section-number">1.3</span> Data</a></li>
+  <li><a href="#start-developing-strategies-as-soon-as-possible" id="toc-start-developing-strategies-as-soon-as-possible" class="nav-link" data-scroll-target="#start-developing-strategies-as-soon-as-possible"><span class="header-section-number">1.4</span> Start developing strategies as soon as possible</a></li>
+  <li><a href="#synchronization-through-syncthing" id="toc-synchronization-through-syncthing" class="nav-link" data-scroll-target="#synchronization-through-syncthing"><span class="header-section-number">1.5</span> Synchronization through syncthing</a></li>
+  <li><a href="#literature-review" id="toc-literature-review" class="nav-link" data-scroll-target="#literature-review"><span class="header-section-number">1.6</span> Literature review</a></li>
   </ul>
 </nav>
     </div>
@@ -168,7 +186,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction (#section-intro)</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></h1>
 </div>
 
 
@@ -187,45 +205,82 @@ div.csl-indent {
 
 <section id="becktesting-engine-quantconnect" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="becktesting-engine-quantconnect"><span class="header-section-number">1.1</span> Becktesting engine (Quantconnect)</h2>
-<p>In most cases, you will use a backtesting engine to test your trading strategies. A backtesting engine is a software that simulates the performance of a trading strategy on historical data. There are many backtesting engines available. In out work we mostly use Quantconnect.</p>
-<p>Quantconnect is cloud platform for quant research and trading. It is based on LEAN engine, which is open source. It supports backtesting and live trading. It is written in C# and supports python. It has a lot of data sources, and it is relativly easy to use. It is a perfect environment for backtesting trading strategies and simple migration to paper/live trading.</p>
-<p>Similar, to programming languges, we want learn you how to use Quantconnect. We can only give you some recommendations on how to learn it.</p>
+<p>In most cases, you will use a backtesting engine to test your trading strategies. A backtesting engine is a software that simulates the performance of a trading strategy on historical data. There are many backtesting engines available. We mostly use Quantconnect.</p>
+<p>Quantconnect is cloud platform for quant research and trading based on LEAN engine, which is open source. It supports backtesting and live trading. It is written in C# and supports python. It has a lot of data sources, and it is relatively easy to use. It is a perfect environment for backtesting trading strategies and simple migration to paper/live trading.</p>
+<p>Similar, to programming languages, we want to teach you how to use Quantconnect. Here are some recommendations:</p>
 <ul>
-<li>register as a new user on https://www.quantconnect.com/</li>
-<li>go through bootcamps that can be found by clicking on Algorithm Lab - Learning Center.</li>
-<li>go through you tube video series (especially https://www.youtube.com/playlist?list=PLgWn81pQ2CNKcuUgFosE5YlfJvIZmbVG8)</li>
-<li>Read the documentation https://www.quantconnect.com/docs/v2/writing-algorithms</li>
+<li>register as a new user on Quantconnect, <a href="https://www.quantconnect.com/" target="_blank">homepage</a></li>
+<li>go through bootcamps that can be found on Quantconnect site by clicking on Algorithm Lab &gt; Learning Center,</li>
+<li>go through You Tube <a href="https://www.youtube.com/playlist?list=PLgWn81pQ2CNKcuUgFosE5YlfJvIZmbVG8" target="_blank">video series</a>,</li>
+<li>Read the Quantconnect <a href="https://www.quantconnect.com/docs/v2/writing-algorithms" target="_blank">documentation</a></li>
 </ul>
-<p>It is not necessary to go into details. The recommendation is to start with equity for the beginning. Later you can try with options/futures or some other asset classes. You can use python and C#, but we recommend you to use python. Python is much more used in finance, and it has numerous packages that make your job easier.</p>
-<p>Except Quantconnect, there are other backtesting platforms. Here are some for information, you can check them if you want: - Zorro trading engine - Writing fasting trading strategies in C-lite or C++. Source: https://zorro-project.com/ (C i C++) - Natulius trader - write trading strategies in python or rust. Source: https://nautilustrader.io/ - Backtrader - very popular backtesting engine written in pure python. Source: https://www.backtrader.com/ - Vectorbt - vektorized backtester in python. Source: https://vectorbt.dev/ - Some people develop their own backtester, but we don’t recommend it for the beginning, except for simple strategies that include for loops for quick analysis.</p>
+<p>It is not necessary to go into details. The recommendation is to start with equity for the beginning. Later you can try with options/futures or some other asset classes. You can use python and C#, but we recommend to use python. Python is much more used in finance, and it has numerous packages that make your job easier.</p>
+<p>Except Quantconnect, there are other backtesting platforms. Here are some for information, you can check them if you want:</p>
+<ul>
+<li><a href="https://zorro-project.com/%20(C%20i%20C++)" target="_blank">Zorro</a> - Writing fast trading strategies in C-lite or C++,</li>
+<li><a href="https://nautilustrader.io/" target="_blank">Natulius trader</a> - write trading strategies in python or rust,</li>
+<li><a href="https://www.backtrader.com/" target="_blank">Backtrader</a> - very popular backtesting engine written in pure python,</li>
+<li><a href="https://vectorbt.dev/" target="_blank">Vectorbt</a> - vectorized backtester in python,</li>
+<li>Some people develop their own backtester, but we don’t recommend it for beginners, except for simple strategies that include loops for quick analysis.</li>
+</ul>
 </section>
 <section id="programming-languages" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="programming-languages"><span class="header-section-number">1.2</span> Programming languages</h2>
-<p>The most used programming language in the world of finance is Python. It is a high-level programming language that is relatively easy to learn and use. Other popular programming languages in finance include R, C++, Java, and MATLAB. In our researching process, backtesting and deployment, we mostly use R, python and, occasionally, C++. Learning one of this languages is a must for every quant. The more languages you know, the more versatile you are.</p>
-<p>We can’t teach you any of this languages in this book. We can only give you some recommendations on how to learn them. We recommend you to start with Python, as it is the most used language in finance. You can learn it through online tutorials, books, or courses. There are plenty of sources online. It also depends on you preferences, If you like more to watch videos start with them, if you like books start with them.</p>
-<p>If you are beginnes, we recommend you to start with DataCamp (https://www.datacamp.com/). It has a lot of courses for beginners and advanced users. Second, don’t just learn the language, start developing strategies with it as soon as possible. The best way to learn a programming language is by using it. Just strt the project in your favorit IDE (say VS code) and start coding.</p>
-<p>If you prefer R, we recommend you to start learn following packages: - data.table - for all data wrangling tasks. It is faster than dplyr in R and pandas in python and uses less memory. - ggplot - for visualization. - PerformanceAnalytics - for calculating various portfolio or individual stock performances. - runner - for creating rolling and expanding windows. Here only one function is important. - lubridate - for working with times in R (converting time zones and similar). - mlr3 (optional, if you use ML, <span class="citation" data-cites="mlr3book">(<a href="references.html#ref-mlr3book" role="doc-biblioref">Binder et al. 2023</a>)</span>) - Something like scikit learn in python. - Rcpp (optional, if you want to use c++ within R). - the biggest advantage of R is the rich set of statistical packages that are already developed. By simply googling you can quickly find a lot of information. You need GARCH? USe ugarch package. You need ARIMA? Use forecast package. You need to calculate VaR? Use rugarch package. And so on.</p>
+<p>The most used programming language in the world of finance is Python. It is a high-level programming language that is relatively easy to learn and use. Other popular programming languages in finance include R, C++, Java, and MATLAB. In our researching process, backtesting and deployment, we mostly use R, python and, occasionally, C++. Learning one of these languages is a must for every quant. The more languages you know, the more versatile you are.</p>
+<p>We can’t teach you any of these languages in this book. We can only give you some recommendations on how to learn them. We recommend to start with Python, as it is the most used language in finance. You can learn it through online tutorials, books, or courses. There are plenty of sources online. It also depends on your preferences, watch videos read books…</p>
+<p>If you are a beginner, we recommend to start with <a href="https://www.datacamp.com/">DataCamp</a> . It has a lot of courses for beginners and advanced users. Second, don’t just learn the language, start developing strategies as soon as possible. The best way to learn a programming language is by using it. Just start the project in your favorite IDE (say VS code) and start coding.</p>
+<p>If you prefer R, we recommend you to start learn following packages: - data.table - for all data wrangling tasks. It is faster than dplyr in R and pandas in python and uses less memory. - ggplot - for visualization. - PerformanceAnalytics - for calculating various portfolio or individual stock performances. - runner - for creating rolling and expanding windows. Here only one function is important. - lubridate - for working with times in R (converting time zones and similar). - mlr3 (optional, if you use ML, <span class="citation" data-cites="mlr3book">(<a href="references.html#ref-mlr3book" role="doc-biblioref">Binder et al. 2023</a>)</span>) - Something like scikit learn in python. - Rcpp (optional, if you want to use c++ within R). - The biggest advantage of R is the rich set of statistical packages that are already developed. By simply googling you can quickly find a lot of information. You need GARCH? Use ugarch package. You need ARIMA? Use forecast package. You need to calculate VaR? Use rugarch package. And so on.</p>
 <p>All above packages are learned continuously, through the development of strategies and projects. Every day you learn something new.</p>
 </section>
-<section id="start-developing-strategies-as-soon-as-possible" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="start-developing-strategies-as-soon-as-possible"><span class="header-section-number">1.3</span> Start developing strategies as soon as possible</h2>
-<p>Except learning programming languages and backtesting engines, you should start developing strategies as soon as possible. The best way to learn is by doing. When you start developing strategies, start with simple ones. The more complex the strategy, the more difficult it is to debug and understand. We will give you some recommendations on how to start developing strategies.</p>
-<p>…</p>
-<p>Osim učenja gornjih tehnologija, poslat ću i: 1) jednu postojeću strategiju kako bi je proučili i potencijalno poboljšali (zajednički možemo raspraviti kako se može poboljšati). 2) jednu novu strategiju koju možeš testirati kroz skriptu/notebook u programskom jeziku po izboru i/ili Quantconnectu.</p>
-<p>…</p>
-<section id="market-orders-vs-limit-orders" class="level3" data-number="1.3.1">
-<h3 data-number="1.3.1" class="anchored" data-anchor-id="market-orders-vs-limit-orders"><span class="header-section-number">1.3.1</span> Market orders vs limit orders</h3>
-<p>https://x.com/macrocephalopod/status/1375937561366003723</p>
-<p>You can always submit a limit order which crosses the spread, combining the benefit of immediacy for all reasonable cases with the protection of a price limit in case of an illiquid market or price jump. A market buy order is a limit order with a price limit of infinity.</p>
-<p>Seems relevant given the recent BRK.A shenanigans on 06/2024.</p>
+<section id="data" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="data"><span class="header-section-number">1.3</span> Data</h2>
+<p>List of vendors are available on the <a href="https://miltonfmr.com/historical-data-vendor-list/#" target="_blank">link</a></p>
+<p>We would like to add two more sources:</p>
+<ul>
+<li><a href="https://databento.com/" target="_blank">Databento</a> - new data provider for very quality and granular market data.</li>
+<li><a href="https://financialmodelingprep.com/" target="_blank">Financial Modeling Prep</a> (FMP) - free and paid data provider for various type of data.</li>
+</ul>
+<p>We use daily and hour OHLCV (open, high, low, close price, volume) data from Algoseek (bought from Quantconnect) and minute data from Databento. We also use fundamental data from FMP.</p>
+</section>
+<section id="start-developing-strategies-as-soon-as-possible" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="start-developing-strategies-as-soon-as-possible"><span class="header-section-number">1.4</span> Start developing strategies as soon as possible</h2>
+<p>Except learning programming languages and backtesting engines, you should start developing strategies as soon as possible. The best way to learn is by working. When you start developing strategies, start with simple ones. The more complex the strategy, the more difficult it is to debug and understand. We will give you some recommendations on how to start developing strategies in next section.</p>
+<p>Your task would be to develope: 1) an existing strategy for you to study and potentially improve (we can discuss together how it can be improved). 2) a new strategy that you can test through a script/notebook in a programming language of your choice and/or Quantconnect.</p>
+</section>
+<section id="synchronization-through-syncthing" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="synchronization-through-syncthing"><span class="header-section-number">1.5</span> Synchronization through syncthing</h2>
+<p>We use syncthing for synchronization of files between team members. It is a decentralized file synchronization tool that is very easy to use. It is open source and free. You can download it from https://syncthing.net/. It is available for all operating systems.</p>
+<p>Here are the steps you need to do to start using syncthing and synchronize with our server:</p>
+<ul>
+<li>Download syncthing on the <a href="https://syncthing.net/downloads/" target="_blank">link</a>. Read this Getting started <a href="https://docs.syncthing.net/intro/getting-started.html" target="_blank">guide</a> to learn how to download and use it.</li>
+<li>After you download it, start it. You will see a web interface in your browser.</li>
+</ul>
+</section>
+<section id="literature-review" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="literature-review"><span class="header-section-number">1.6</span> Literature review</h2>
+<p>For econometrics, we recommend the book <span class="citation" data-cites="Wooldridge2019">(<a href="references.html#ref-Wooldridge2019" role="doc-biblioref"><strong>Wooldridge2019?</strong></a>)</span>. It is a very good book for beginners. If you prefer you tube videos, we recommend Ben Lamberts- <a href="https://www.youtube.com/@SpartacanUsuals" target="_blank">videos</a>.</p>
+<p>Financial econometrics applies statistical methods on financial time series. There are many books and papers that you can read. For the beginners we recommend the book <span class="citation" data-cites="Hurn2019">Hurn, Martin, and Silvennoinen (<a href="references.html#ref-Hurn2019" role="doc-biblioref">2019</a>)</span>.</p>
+<p>Stock prices and stock returns are just ralizations of time series. There are many time series introduction books. For more advances (nonlinear) time series, we recommend <span class="citation" data-cites="Fan2019">Fan and Yao (<a href="references.html#ref-Fan2019" role="doc-biblioref">2019</a>)</span>.</p>
+<p>For ML and deep learning introductions we recommend Ng’s courses on <a href="https://www.coursera.org/specializations/machine-learning-introduction?action=enroll&amp;utm_campaign=WebsiteCourses-MLS-TopButton-mls-launch-2022&amp;utm_medium=institutions&amp;utm_source=deeplearning-ai" target="_blank">Coursera</a> <span class="citation" data-cites="Coursera2024">Ng and DeepLearning.AI (<a href="references.html#ref-Coursera2024" role="doc-biblioref">n.d.</a>)</span> and <a href="https://www.deeplearning.ai/">DeepLearning.ai</a>. For applied approach try with <span class="citation" data-cites="Fastai2024">Howard and Gugger (<a href="references.html#ref-Fastai2024" role="doc-biblioref">n.d.</a>)</span>.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
 <div id="ref-mlr3book" class="csl-entry" role="listitem">
 Binder, Martin, Michel Lang, Lars Kotthoff, Patrick Schratz, Giuseppe Casalicchio, and Bernd Bischl. 2023. <em>Machine Learning with r: A Complete Guide</em>. mlr3book.mlr-org.com. <a href="https://mlr3book.mlr-org.com/">https://mlr3book.mlr-org.com/</a>.
 </div>
+<div id="ref-Fan2019" class="csl-entry" role="listitem">
+Fan, Jianqing, and Qiwei Yao. 2019. <em>Nonlinear Time Series Analysis</em>. Wiley Series in Probability and Statistics. Hoboken, NJ: Wiley. <a href="https://www.amazon.com/Nonlinear-Analysis-Wiley-Probability-Statistics/dp/1119264057">https://www.amazon.com/Nonlinear-Analysis-Wiley-Probability-Statistics/dp/1119264057</a>.
 </div>
-</section>
+<div id="ref-Fastai2024" class="csl-entry" role="listitem">
+Howard, Jeremy, and Sylvain Gugger. n.d. <span>“Fast.ai Course: Practical Deep Learning for Coders - Lesson 1.”</span> <a href="https://course.fast.ai/Lessons/lesson1.html" class="uri">https://course.fast.ai/Lessons/lesson1.html</a>.
+</div>
+<div id="ref-Hurn2019" class="csl-entry" role="listitem">
+Hurn, Stan, Vance Martin, and Annastiina Silvennoinen. 2019. <em>Financial Econometric Modeling</em>. New York: Oxford University Press. <a href="https://www.amazon.com/Financial-Econometric-Modeling-Stan-Hurn/dp/0190857064">https://www.amazon.com/Financial-Econometric-Modeling-Stan-Hurn/dp/0190857064</a>.
+</div>
+<div id="ref-Coursera2024" class="csl-entry" role="listitem">
+Ng, Andrew, and DeepLearning.AI. n.d. <span>“Machine Learning Specialization.”</span> <a href="https://www.coursera.org/specializations/machine-learning-introduction?action=enroll&amp;utm_campaign=WebsiteCourses-MLS-TopButton-mls-launch-2022&amp;utm_medium=institutions&amp;utm_source=deeplearning-ai" class="uri">https://www.coursera.org/specializations/machine-learning-introduction?action=enroll&amp;utm_campaign=WebsiteCourses-MLS-TopButton-mls-launch-2022&amp;utm_medium=institutions&amp;utm_source=deeplearning-ai</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -623,8 +678,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./basic_strategies.html" class="pagination-link" aria-label="Basic systematic trading strategies">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Basic systematic trading strategies</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

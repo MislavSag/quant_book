@@ -1,0 +1,16 @@
+# Trading Basics
+
+## Automated vs systematic vs quantitatvie investing
+
+We often here terms *automated*, *systemtic* and *quantitative* trading as synonyms (opposites are *manual*, *discretionary* and *non-quantitatvie*  trading). But they refer to different things [@twitter_user_2023]. Automated trading refers to the use of computers (codes) to execute trades. Fully automated trading doesn't require human intervention. Everything is automated, from data loading and statistical analysis, to execution. There is of course a spectrum of automation, from semi-automated to fully automated. Systematic trading refers to the use of a system or a set of rules to make trading decisions. The rules can be based on technical analysis, fundamental analysis, or a combination of both. Quantitative trading refers to the use of (mathematical) models to make trading decisions. The models can be based on statistical analysis, machine learning, or a combination of both. Quantitative trading is a subset of systematic trading, because model based trading is systematic by definition. But not all systematic trading is quantitative. For example, a systematic trader can use technical analysis to make trading decisions (e.g. SMA short is higher than SMA long), without using any mathematical models.
+
+
+## Market orders vs limit orders
+
+https://x.com/macrocephalopod/status/1375937561366003723
+
+
+You can always submit a limit order which crosses the spread, combining the benefit of immediacy for all reasonable cases with the protection of a price limit in case of an illiquid market or price jump. A market buy order is a limit order with a price limit of infinity.
+
+
+Seems relevant given the recent BRK.A shenanigans on 06/2024.
